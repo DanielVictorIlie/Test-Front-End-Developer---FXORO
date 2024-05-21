@@ -1,0 +1,418 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile View */
+
+.header,
+.body,
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-card,
+.blue-bg,
+.white-bg,
+.intro,
+.commitment,
+.footer {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logo {
+  margin-top: 1em;
+}
+.header-card > .title {
+  font-size: 2em;
+  font-weight: 800;
+  color: #273773;
+}
+
+.header-card > .title > p > span {
+  color: #1b75ba;
+}
+
+.header-card > .content {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-margin > span {
+  font-weight: bold;
+}
+
+.no-margin > span > span {
+  color: #ffb10a;
+}
+
+.learn-more-button {
+  margin-top: 32px;
+}
+.learn-more-button > button,
+.close-modal-btn {
+  background-color: #ef5a28;
+  border: none;
+  color: white;
+  width: 90%;
+  padding: 5px;
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.learn-more-button > button:hover,
+.close-modal-btn:hover {
+  background-color: #ffb10a;
+}
+
+/* modal */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  height: 300px;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-wrapper > h1 {
+  color: #273773;
+  margin: 0;
+  padding-top: 3%;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 350px;
+}
+
+label {
+  text-align: start;
+  padding: 2%;
+}
+
+input {
+  border: 2px solid #273773;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.close-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.close-btn-wrapper > button {
+  width: 75%;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+/* modal */
+
+.learn-more-button > p {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.header-card-image {
+  margin-top: 20px;
+}
+.header-card-image > img {
+  width: 100%;
+}
+.observation-card {
+  border-top: 3px solid #273773;
+}
+.intro > .title {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #273773;
+}
+
+.intro > .content {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.blue-bg {
+  background-color: #273773;
+}
+
+.blue-bg > * {
+  color: white;
+}
+
+.white-bg > * {
+  color: #273773;
+}
+
+.title-yellow {
+  color: #feaf09;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.title-yellow > * {
+  margin: 0;
+}
+
+.energy {
+  padding-top: 1em;
+}
+
+.number > * {
+  margin: 0px;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.card > .content {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.cyber {
+  padding-bottom: 0.2em;
+}
+
+.global {
+  padding-top: 1.5em;
+}
+
+.commitment > .title > p {
+  color: #273773;
+  font-weight: 900;
+  font-size: 1.4em;
+}
+
+.blue-bg > .learn-more-button {
+  margin: 0;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.commitment > .title > p > span {
+  color: #ffb10a;
+}
+
+.article > h1 {
+  color: #273773;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.article > p {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.footer {
+  background-color: #181818;
+  color: white;
+}
+
+/* Tablet View */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .header-card-image > img {
+    width: 60%;
+  }
+
+  .modal-wrapper {
+    width: 65%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .blue-bg,
+  .white-bg {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .energy,
+  .global {
+    padding: 0;
+  }
+
+  .card {
+    margin-top: 1.5em;
+    width: 50%;
+  }
+
+  .blue-bg > .learn-more-button {
+    width: 90%;
+  }
+}
+
+/*Desktop View*/
+
+@media (min-width: 1025px) {
+  .header-card,
+  .blue-bg,
+  .white-bg,
+  .intro,
+  .commitment,
+  .footer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .header,
+  .footer {
+    text-align: start;
+  }
+
+  .modal-wrapper {
+    width: 50%;
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .learn-more-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./images/coin-image1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    background-size: 600px 500px;
+  }
+
+  .header-card {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+  .header-card-image {
+    width: 40%;
+    visibility: hidden;
+  }
+
+  .header-card > .content {
+    margin: 0;
+  }
+  .learn-more-button {
+    margin-left: 0;
+    width: 50%;
+    margin-top: 32px;
+  }
+
+  .learn-more-button > button {
+    width: 100%;
+  }
+  .learn-more-button > p {
+    text-align: center;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .intro > .title {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin: 0;
+  }
+
+  .intro > .content {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .blue-bg,
+  .white-bg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .energy,
+  .global {
+    padding: 0;
+  }
+
+  .card {
+    margin-top: 1.5em;
+  }
+
+  .blue-bg > .learn-more-button > button {
+    width: 70%;
+  }
+
+  .commitment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .commitment > .title {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer > p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
